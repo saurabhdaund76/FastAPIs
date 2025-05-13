@@ -56,3 +56,6 @@ async def create_product(product: Product):
         "message": "Product created successfully",
         "product": product
     }
+
+
+# create a method to check if the data is successfully inserted or not!

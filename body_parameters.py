@@ -50,3 +50,21 @@ async def update_item(
 @app.get("/items/{item_id}")
 async def read_item(item_id: int):
     return fake_items_db.get(item_id, {"error": "Item not found"})
+
+
+
+#advance body parameter
+
+{
+  "item": {
+    "name": "Banana",
+    "description": "Fresh organic bananas",
+    "price": 30.0,
+    "tax": 2.5
+  },
+  "user": {
+    "username": "admin007",
+    "full_name": "Grocery Manager"
+  },
+  "importance": 5
+}

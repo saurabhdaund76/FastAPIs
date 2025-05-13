@@ -13,6 +13,7 @@ fake_items_db = [
     {"item_name": "Cheese", "category": "dairy", "price": 40},
 ]
 
+
 # Root route
 @app.get("/")
 async def root():
